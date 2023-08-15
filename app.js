@@ -2,9 +2,9 @@ var log = console.log;
 const http = require('http');
 var url = require('url');
 var fs = require('fs');
-var formidable = require('formidable');
-var nodemailer = require('nodemailer');
-var uc = require('upper-case');
+var formidable = require('formidable'); // <-- download the module
+var nodemailer = require('nodemailer'); // <-- download the module
+var uc = require('upper-case'); // <-- download the module
 
 const PASSWORD = 'M3xicali56';
 
@@ -33,7 +33,7 @@ async function send365email(from, to, subject, html, text) {
     }
 }
 
-send365email("support56@abogadoericprice.com", "avelazquez@abogadoericprice.com", "Test mail", "<i>Hello World</i>", "Hello world")
+send365email("support56@abogadoericprice.com", "avelazquez@abogadoericprice.com", "Test mail", "<i>Hello World</i>", "Hello world");
 
 // var mailOptions = {
 //     from: 'no-reply@abogadoericprice.com',
